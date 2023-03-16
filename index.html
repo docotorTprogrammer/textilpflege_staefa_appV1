@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textilpflege Stäfa App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="C:\Users\tarik\Desktop\Textilpflege Staefa App\textilpflegestaefa-logo.jpg" />
+    <h1>Abholschein - Stangen App</h1>
+    <p style="font-size: small;"><em>programmiert von Tarik Martinovic 2023 - V1</em></p>
+    <h4 style="border: dotted rgb(0, 255, 42); text-align: center; padding: 5px;">Abholscheine erfassen</h4>
+    <form id="clothingForm">
+        <label for="clothingNumber">Abholschein-Nummer</label>
+        <input type="number" id="clothingNumber" required>
+        <label for="rodNumber">Stangen-Nummer</label>
+        <input type="number" id="rodNumber" required>
+        <button type="submit">Abholschein-Nummer hinzufügen</button>
+    </form>
+    <div style="color:rgb(255, 136, 0); font-weight: bold;" id="confirmation"></div>
+    <br>
+    <br>
+    <h4 style="border: dotted rgb(255, 132, 0); text-align: center; padding: 5px;">Abholscheine suchen</h4>
+    <form id="searchForm">
+        <label for="searchNumber">Abholschein-Nummer suchen:</label>
+        <input type="number" id="searchNumber" required>
+        <button type="submit">Suchen</button>
+    </form>
+    <div style="color: rgb(255, 136, 0); font-weight: bold; border: 2px solid rgb(0, 0, 0); border-radius: 5px; padding: 10px; " id="result"></div>
+    <br>
+    <br>
+    <h3>Übersicht erfasste Kleider auf Stangen</h3>
+    <table id="clothingTable">
+        <thead>
+            <tr>
+                <th>Kleidungsnummer</th>
+                <th>Stangennummer</th>
+            </tr>
+        </thead>
+        <tbody id="clothingTableBody">
+        </tbody>
+    </table>
+    
+    <script src="script.js"></script>
+</body>
+</html>
